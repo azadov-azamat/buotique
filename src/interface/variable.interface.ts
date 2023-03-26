@@ -1,4 +1,5 @@
 export interface InitialStateProps {
     lang: string;
-    social: any
+    social: any,
+    loadingPage: boolean
 }

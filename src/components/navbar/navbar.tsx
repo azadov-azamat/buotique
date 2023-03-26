@@ -20,7 +20,7 @@ import {
     Select,
     Typography
 } from "@material-tailwind/react";
-import {setLang} from "../../redux/reducers/variable";
+import {handleRefresh, setLang} from "../../redux/reducers/variable";
 import {ChevronDownIcon, ClockIcon, RocketLaunchIcon} from "@heroicons/react/24/outline";
 import {IoLocationOutline} from "react-icons/all";
 
@@ -107,7 +107,12 @@ function Navbar(): JSX.Element {
                 >
                     <ul className="col-span-3 flex flex-col gap-1">
                         {Object.values(Dictionary).filter((v) => !isNaN(Number(v))).map(key => (
-                            <a href="#" key={key} onClick={() => dispatch(setLang(Number(key)))}>
+                            <a href="#" key={key} onClick={() => {
+                                changeLang()
+                                setTimeout(() => {
+                                    dispatch(setLang(Number(key)))
+                                }, 1000)
+                            }}>
                                 <MenuItem>
                                     <Typography variant="h6" color="blue-gray" className="mb-1">
                                         {Dictionary[Number(key)]}
@@ -141,6 +146,13 @@ function Navbar(): JSX.Element {
             object.splice(index, 1);
         }
     })
+
+    function changeLang() {
+        dispatch(handleRefresh(false))
+        setTimeout(() => {
+            dispatch(handleRefresh(true))
+        }, 2000);
+    }
 
     if (path === "/weddings") delete links3[0]
     if (path === "/") delete links3[0]
@@ -211,9 +223,10 @@ function Navbar(): JSX.Element {
                             </div>
                             <div className={classes.social}>
                                 <ul>
-                                    {social?.map((item: any) => (<li><a href={item?.link} target={"_blank"} rel={"noopener"}>
-                                        {item.name}</a>
-                                    </li>))}
+                                    {social?.map((item: any) => (
+                                        <li><a href={item?.link} target={"_blank"} rel={"noopener"}>
+                                            {item.name}</a>
+                                        </li>))}
                                 </ul>
                             </div>
                         </div>

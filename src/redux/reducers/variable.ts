@@ -5,6 +5,7 @@ import i18n from "i18next";
 
 const initialState: InitialStateProps = {
     lang: 'ru',
+    loadingPage: false,
     social: [
         {
             link: "https://www.instagram.com/azadov_azamat",
@@ -25,6 +26,9 @@ const reducers = {
         const langIndex = action.payload
         state.lang = Dictionary[langIndex]
         i18n.changeLanguage(Dictionary[langIndex])
+    },
+    handleRefresh: (state: InitialStateProps, action: PayloadAction<boolean>) => {
+        state.loadingPage = action.payload
     }
 }
 
@@ -34,5 +38,5 @@ export const variableSlice = createSlice({
     reducers
 })
 
-export const {setLang} = variableSlice.actions;
+export const {setLang, handleRefresh} = variableSlice.actions;
 export default variableSlice.reducer
