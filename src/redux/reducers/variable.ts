@@ -4,7 +4,7 @@ import {Dictionary} from "../../helpers/enumuration/dictionary";
 import i18n from "i18next";
 
 const initialState: InitialStateProps = {
-    lang: 'ru',
+    lang: localStorage.getItem('i18nextLng') || 'ru',
     loadingPage: false,
     social: [
         {
@@ -21,6 +21,7 @@ const initialState: InitialStateProps = {
         }
     ]
 }
+
 const reducers = {
     setLang: (state: InitialStateProps, action: PayloadAction<number>) => {
         const langIndex = action.payload
