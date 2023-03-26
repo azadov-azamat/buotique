@@ -4,7 +4,21 @@ import {Dictionary} from "../../helpers/enumuration/dictionary";
 import i18n from "i18next";
 
 const initialState: InitialStateProps = {
-    lang: 'ru',
+    lang: 'en',
+    social: [
+        {
+            link: "https://www.instagram.com/azadov_azamat",
+            name: 'Instagram'
+        },
+        {
+            link: "https://t.me/azamat_azadov",
+            name: 'Telegram'
+        },
+        {
+            link: "https://t.me/azamat_azadov",
+            name: 'Tik tok'
+        }
+    ]
 }
 const reducers = {
     setLang: (state: InitialStateProps, action: PayloadAction<number>) => {

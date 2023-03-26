@@ -1,5 +1,4 @@
 export enum Dictionary {
     ru,
-    uz,
-    en
+    uz
 }

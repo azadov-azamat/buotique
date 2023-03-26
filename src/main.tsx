@@ -10,6 +10,8 @@ import App from './App'
 import {ToastContainer} from 'react-toastify'
 import {store} from "./redux/store"
 
+import { ThemeProvider } from "@material-tailwind/react";
+
 const app = (
     <Provider store={store}>
         <Suspense fallback={false}>
@@ -25,7 +27,9 @@ const app = (
                 pauseOnHover={false}
             />
             <BrowserRouter>
-                <App/>
+                <ThemeProvider>
+                    <App/>
+                </ThemeProvider>
             </BrowserRouter>
         </Suspense>
     </Provider>

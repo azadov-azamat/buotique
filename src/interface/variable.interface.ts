@@ -1,3 +1,4 @@
 export interface InitialStateProps {
-    lang: string
+    lang: string;
+    social: any
 }
