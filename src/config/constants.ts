@@ -1,4 +1,4 @@
-import {Abayas, Home} from "../pages";
+import {Abayas, Beauty, Home, Weddings} from "../pages";
 
 export const routes = [
     {
@@ -8,9 +8,21 @@ export const routes = [
         component: Home
     },
     {
-        id: 1,
+        id: 2,
         name: 'abayas',
-        path: '/',
+        path: '/abayas',
         component: Abayas
+    },
+    {
+        id: 3,
+        name: 'weddings',
+        path: '/weddings',
+        component: Weddings
+    },
+    {
+        id: 4,
+        name: 'beauty',
+        path: '/beauty',
+        component: Beauty
     }
 ]

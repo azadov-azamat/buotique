@@ -23,7 +23,11 @@ module.exports = withMT({
       brown: '#A05842',
       brown_light: '#E5D5BE',
       white: '#FEF9F5',
-      gold: '#CDC18F'
+      gold: '#CDC18F',
+      opacity_form: 'rgba(196, 196, 196, 0.15)',
+      opacity_hero: 'rgba(0, 0, 0, 0.6)',
+      opacity_page: 'rgba(120, 121, 106, 0.3)',
+
     },
     extend: {},
   },

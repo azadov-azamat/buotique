@@ -9,7 +9,7 @@
     }
 
     p {
-      @apply md:text-primary_light text-primary_dark font-normal text-base leading-5 opacity-80;
+      @apply text-white font-normal text-base leading-5 opacity-80;
     }
   }
 
@@ -17,7 +17,7 @@
     @apply flex justify-between items-center gap-9;
     li {
       a {
-        @apply text-primary_light font-normal text-base leading-5 opacity-80;
+        @apply text-white font-normal text-base leading-5 opacity-80;
         img {
           @apply w-4 h-4 object-center object-cover;
         }
@@ -75,7 +75,7 @@
     }
 
     input[type="checkbox"]:checked ~ .menu {
-      @apply right-0 top-0 z-0 w-full h-screen;
+      @apply right-0 z-0 w-full h-screen;
     }
 
     .menu {
@@ -91,7 +91,7 @@
       }
 
       .variable {
-        @apply flex sm:flex-row flex-col gap-4 font-comforts text-primary_dark  h-36;
+        @apply flex-col sm:flex-row flex-col gap-4 font-comforts text-primary_dark  h-36;
 
         .setting {
           @apply flex flex-col sm:gap-0 gap-7 justify-between h-full;
@@ -106,7 +106,7 @@
               }
 
               &:hover {
-                @apply text-primary_light;
+                @apply text-white;
                 span {
                   @apply right-0 left-0;
                 }
@@ -127,13 +127,13 @@
         }
 
         .address {
-          @apply flex flex-col gap-2 mt-3 sm:mt-0;
+          @apply w-full flex flex-col gap-2 mt-3 sm:mt-0;
           .p {
             @apply flex items-center gap-2;
             div {
               @apply bg-primary_dark w-7 h-7 rounded-full flex justify-center items-center;
               svg {
-                @apply w-4 text-primary_light;
+                @apply w-4 text-white;
               }
             }
           }
@@ -153,7 +153,7 @@
       @apply  h-6 w-7 fixed top-5 right-4 z-20 flex flex-col justify-between items-center;
 
       span {
-        @apply bg-primary_dark w-full flex rounded h-1;
+        @apply w-full flex rounded h-1;
       }
 
       .line1 {
@@ -215,7 +215,7 @@
               }
 
               &:hover {
-                @apply text-primary_light;
+                @apply text-white;
                 span {
                   @apply right-0 left-0;
                 }
@@ -242,7 +242,7 @@
             div {
               @apply bg-primary_dark w-7 h-7 rounded-full flex justify-center items-center;
               svg {
-                @apply w-4 text-primary_light;
+                @apply w-4 text-white;
               }
             }
           }

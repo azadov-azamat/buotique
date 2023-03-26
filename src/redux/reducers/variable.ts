@@ -4,7 +4,7 @@ import {Dictionary} from "../../helpers/enumuration/dictionary";
 import i18n from "i18next";
 
 const initialState: InitialStateProps = {
-    lang: 'en',
+    lang: 'ru',
     social: [
         {
             link: "https://www.instagram.com/azadov_azamat",

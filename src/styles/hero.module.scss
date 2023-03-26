@@ -1,0 +1,53 @@
+.header {
+  @apply w-full h-screen flex flex-col items-center justify-between font-comforts bg-opacity_hero -z-[3];
+
+  .head-text {
+    @apply flex flex-col items-center justify-center sm:w-2/3 w-full text-primary_light gap-14;
+
+    .play {
+      @apply flex items-center justify-between gap-2 cursor-pointer font-comforts;
+
+      div {
+        @apply 2xl:text-lg xl:text-base text-sm opacity-80 ;
+      }
+
+    }
+
+    .border-head {
+      @apply 2xl:py-14 2xl:px-20 xl:py-12 xl:px-16 lg:py-10 lg:px-14 md:py-8 md:px-12 md:w-auto w-full py-6 px-0 border border-primary_light
+      text-center bg-opacity_page backdrop-blur-lg z-0;
+      .span {
+        @apply font-shangoB 2xl:text-4xl xl:text-2xl lg:text-2xl md:text-xl text-xl uppercase tracking-wider text-primary_light;
+
+        span {
+          @apply text-gold;
+        }
+      }
+    }
+  }
+
+  .head-bottom {
+    @apply flex w-full md:justify-between justify-center items-center 2xl:px-52 xl:px-14 lg:px-7 px-6 pb-10;
+    p {
+      @apply hidden md:flex items-center gap-2 text-primary_light font-normal text-base leading-5 opacity-80;
+      svg {
+        @apply w-4 text-primary_light;
+      }
+    }
+
+    img {
+      @apply w-8;
+    }
+
+    .mouse {
+      @apply flex items-center justify-center flex-col cursor-pointer;
+      svg {
+        @apply text-primary_light w-8 h-12 opacity-50;
+      }
+
+      .img {
+        @apply w-6 absolute font-bold opacity-100 duration-500 animate-bounce bottom-0;
+      }
+    }
+  }
+}

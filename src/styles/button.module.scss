@@ -1,0 +1,75 @@
+.ripple-button {
+  @apply font-comforts 2xl:py-8 2xl:px-14 xl:px-11 rounded xl:px-6 py-4 px-6 relative m-2 cursor-pointer overflow-hidden text-primary_light duration-300;
+  //z-index: 2;
+
+  .content {
+    @apply flex justify-center items-center relative text-center gap-3;
+    z-index: 2;
+
+    svg {
+      @apply text-primary_light font-bold text-2xl;
+    }
+  }
+
+  .ripple {
+    @apply bg-primary_dark rounded-full w-5 h-5 absolute block opacity-100 content-none;
+    animation: 0.9s ease 1 forwards ripple-effect;
+  }
+
+  @keyframes ripple-effect {
+    0% {
+      transform: scale(1);
+      opacity: 1;
+    }
+    50% {
+      transform: scale(10);
+      opacity: 0.375;
+    }
+    100% {
+      transform: scale(35);
+      opacity: 0;
+    }
+  }
+}
+
+.success {
+  @apply hover:bg-primary_light bg-primary_dark;
+}
+
+.disable {
+  @apply bg-primary_light cursor-auto;
+}
+
+.outline {
+  @apply border border-primary_light 2xl:text-lg xl:text-base opacity-80;
+  background-color: transparent;
+
+  .span {
+    @apply absolute top-0 bottom-0 left-1/2 right-1/2 -z-10 duration-500 ease-in;
+    background-color: transparent;
+  }
+
+  &:hover {
+    .span {
+      @apply opacity-20 right-0 left-0 bg-primary_dark;
+      z-index: 1;
+    }
+  }
+}
+
+.outline-border {
+  @apply border border-primary_dark text-primary_dark 2xl:text-lg xl:text-base opacity-80;
+  background-color: transparent;
+
+  .span {
+    @apply absolute top-0 bottom-0 left-1/2 right-1/2 -z-10 duration-500 ease-in;
+    background-color: transparent;
+  }
+
+  &:hover {
+    .span {
+      @apply opacity-20 right-0 left-0 bg-primary_dark;
+      z-index: 1;
+    }
+  }
+}

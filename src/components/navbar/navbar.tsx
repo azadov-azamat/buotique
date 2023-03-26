@@ -197,7 +197,7 @@ function Navbar(): JSX.Element {
                 </div>
                 <div className={classes.menu}>
                     <ul className={classes['menu-ul']}>
-                        {linksMd.map(link => <li key={link.id}><Link to={link.href}>{link.name}</Link></li>)}
+                        {linksMd.map(link => <li key={link.id}><Link to={link.href}>{t(link.name)}</Link></li>)}
                     </ul>
                     <div className={classes.variable}>
                         <div className={classes.setting}>
