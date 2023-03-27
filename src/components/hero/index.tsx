@@ -2,8 +2,7 @@ import React from 'react';
 import {HeroProps} from "./hero.props";
 import {BiChevronDown, BsClock, CgMouse, IoLocationOutline} from "react-icons/all";
 import classes from "../../styles/hero.module.scss";
-import img from "../../assets/head/landing.png"
-import { LazyLoadImage } from "react-lazy-load-image-component";
+import {LazyLoadImage} from "react-lazy-load-image-component";
 
 function HeroComponent({children, title, imgBg}: HeroProps): JSX.Element {
     return (
@@ -13,7 +12,6 @@ function HeroComponent({children, title, imgBg}: HeroProps): JSX.Element {
                            alt="header-img"
                            loading={'lazy'}
             />
-            {/*<img src={imgBg} alt="header-img" loading={'lazy'}  className={"w-full h-full absolute -z-10 object-cover object-center"}/>*/}
             <div className={classes['head-top']}></div>
             <div className={classes['head-text']}>
                 <div className={classes['border-head']}>
