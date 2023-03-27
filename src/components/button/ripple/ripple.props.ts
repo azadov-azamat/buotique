@@ -5,5 +5,5 @@ export interface RippleProps {
     onClick: () => void;
     color?: string;
     disable?: boolean;
-    outline: boolean;
+    outline?: boolean;
 }

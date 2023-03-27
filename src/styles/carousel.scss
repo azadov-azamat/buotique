@@ -1,0 +1,10 @@
+.owl-carousel{
+  .owl-nav{
+    @apply absolute sm:-top-12 top-1/3 w-full flex justify-between;
+    button{
+      span{
+        @apply sm:text-6xl text-7xl text-primary_dark;
+      }
+    }
+  }
+}

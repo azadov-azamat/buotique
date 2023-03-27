@@ -52,7 +52,19 @@ module.exports = withMT({
       opacity_page: 'rgba(120, 121, 106, 0.3)',
 
     },
-    extend: {},
+    extend: {
+      boxShadow: {
+        nav: "0 4px 10px rgba(0, 0, 0, 0.4)",
+        service: '0px 4px 60px rgba(204, 193, 142, 0.1)',
+        serviceBg: '0px 4px 60px rgba(212, 226, 213, 0.5)',
+        comments: '0px 4px 50px rgba(212, 226, 213, 0.2)',
+        footer: '0px -1px 20px rgba(0, 0, 0, 0.5)',
+        modal: '5px 5px 40px 19px rgba(0, 0, 0, 0.06)'
+      },
+      dropShadow: {
+        context: "0px 0px 12px rgba(255, 255, 255, 0.5)"
+      }
+    },
   },
   plugins: [
     require('tailwind-scrollbar'),

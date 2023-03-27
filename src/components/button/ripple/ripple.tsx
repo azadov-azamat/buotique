@@ -3,7 +3,7 @@ import {RippleProps} from "./ripple.props";
 import {Button, Menu} from "@material-tailwind/react";
 import classes from "../../../styles/button.module.scss"
 
-function Ripple({children, onClick, color, disable = false, outline}: RippleProps) {
+function Ripple({children, onClick, color, disable = false, outline = false}: RippleProps) {
 
     const [coords, setCoords] = React.useState({x: -1, y: -1});
     const [isRippling, setIsRippling] = React.useState(false);

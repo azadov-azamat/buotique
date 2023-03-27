@@ -1,0 +1,7 @@
+@font-face {
+    font-family: "shango-bold";
+    src: url("./otf/Shango Bold.otf");
+    src: url("./otf/Shango Bold.otf?#iefix") format("woff"),
+    url("./otf/Shango Bold.otf") format("opentype"),
+    url("./otf/Shango Bold.otf") format("truetype");
+}

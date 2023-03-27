@@ -90,7 +90,6 @@ function Navbar(): JSX.Element {
                     <Button
                         {...triggers}
                         variant="text"
-                        className="flex items-center hover:bg-transparent gap-3 text-sm text-primary_light font-normal capitalize tracking-normal"
                     >
                         <BsGlobe fontSize={15}/> {lang}{" "}
                         <ChevronDownIcon

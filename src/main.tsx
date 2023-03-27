@@ -1,6 +1,8 @@
 import React, {Suspense} from 'react'
 import './styles/index.css'
 import './helpers/translation/i18n'
+import 'owl.carousel/dist/assets/owl.carousel.css'
+import 'owl.carousel/dist/assets/owl.theme.default.css'
 
 import {createRoot} from 'react-dom/client'
 import {BrowserRouter} from 'react-router-dom'

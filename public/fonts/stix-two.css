@@ -1,0 +1,23 @@
+@font-face {
+    font-family: "STIX Two Text";
+    src: url("https://raw.githubusercontent.com/stipub/stixfonts/master/fonts/variable_ttf_woff2/STIXTwoText%5Bwght%5D.woff2")
+    format("woff2-variations");
+    font-weight: 125 950;
+    font-stretch: 75% 125%;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "STIX Two Text";
+    src: url("https://raw.githubusercontent.com/stipub/stixfonts/master/fonts/variable_ttf_woff2/STIXTwoText-Italic%5Bwght%5D.woff2")
+    format("woff2-variations");
+    font-weight: 125 950;
+    font-stretch: 75% 125%;
+    font-style: oblique 10deg 30deg;
+}
+
+@font-face {
+    font-family: "STIX Two Math";
+    src: url("https://raw.githubusercontent.com/stipub/stixfonts/v2.11/fonts/static_otf_woff2/STIXTwoMath-Regular.woff2")
+    format("woff2");
+}

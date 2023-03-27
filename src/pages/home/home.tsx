@@ -21,7 +21,7 @@ function HomePage(): JSX.Element {
                     <BsPlay fontSize={25}/>
                 </div>
                 <a href={"tel:+998 97 101 88-80"}
-                   className={"flex items-center gap-2 md:hidden text-primary_light hover:text-primary_yellow"}>
+                   className={"flex items-center gap-2 md:hidden text-primary_light hover:text-gold"}>
                     <FiPhone/>
                     <div className={"text-base"}>
                         +998 97 101 88-80

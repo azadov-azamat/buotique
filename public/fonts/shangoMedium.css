@@ -1,0 +1,7 @@
+@font-face {
+    font-family: "shango-medium-2";
+    src: url("public/fonts/otf/Shango Medium.otf");,
+    src: url("public/fonts/Shango Medium.otf?#iefix") format("woff"),
+    url("./otf/Shango Medium.otf") format("opentype"),
+    url("./otf/Shango Medium.otf") format("truetype");
+}

@@ -1,0 +1,115 @@
+.wrapper {
+  @apply 2xl:px-48 xl:px-14 lg:px-7 px-6 pb-16;
+
+  .title {
+    @apply w-full flex justify-center items-center text-xl xl:text-3xl lg:text-2xl uppercase pb-2 font-shangoB;
+
+    p {
+      @apply flex text-primary_dark;
+      span {
+        @apply flex text-gold;
+        p {
+          @apply text-xl text-gold;
+        }
+      }
+    }
+  }
+
+  .owl-theme {
+    .carousel {
+      @apply sm:w-80 w-full h-72 flex items-center;
+      .list {
+        @apply w-full h-56 flex flex-col justify-between py-5 px-8 rounded-2xl relative shadow shadow-comments bg-primary_light;
+
+        .head {
+          @apply absolute -top-7 sm:left-32 left-52 z-50;
+          .quote {
+            @apply w-12 h-12 rounded-full flex justify-center items-center bg-primary_dark;
+            img {
+              @apply object-cover object-center;
+            }
+          }
+        }
+
+        .p-text {
+          @apply w-full h-32 pt-2 overflow-hidden text-ellipsis text-base text-primary_dark font-light font-comforts;
+        }
+
+        .owner {
+          @apply w-full flex justify-between float-right items-center;
+          .stars {
+            @apply flex items-center;
+            svg {
+              @apply text-primary_dark;
+            }
+          }
+
+          .name {
+            @apply text-base font-comforts font-medium text-primary_dark;
+          }
+        }
+      }
+    }
+  }
+
+  .create {
+    @apply w-full md:h-72 flex rounded-2xl pt-12 px-12 z-0 shadow shadow-comments h-[500px];
+
+    .img {
+      @apply relative overflow-hidden hidden xl:block w-[35%];
+      span {
+        @apply text-primary_dark text-3xl tracking-wider font-shangoB;
+      }
+
+      img {
+        @apply absolute -bottom-6 -z-10 left-1/4;
+      }
+    }
+
+    .type-comment {
+      @apply w-full md:h-full flex md:flex-row flex-col justify-between pb-12 xl:w-[60%];
+
+      .textarea {
+        @apply w-full h-full relative flex flex-col md:w-[57%];
+        textarea {
+          @apply w-full h-full px-5 py-4;
+        }
+
+        span {
+          @apply absolute bottom-4 right-5 text-primary_dark;
+        }
+      }
+
+      textarea, input {
+        @apply rounded border border-primary_dark text-primary_dark font-comforts;
+
+        &:focus {
+          border: 1px solid #6C9392 !important;
+        }
+      }
+
+      .name {
+        @apply flex flex-col w-full md:pt-0 pt-4 gap-4 pb-0 md:w-[37%];
+        label {
+          @apply flex items-center font-normal text-sm gap-2 cursor-pointer text-primary_dark font-comforts;
+
+          span {
+            @apply mx-2;
+          }
+
+          input {
+            @apply border-primary_light;
+
+          }
+        }
+
+        .stars {
+          @apply flex w-full justify-between;
+          svg {
+            @apply text-3xl cursor-pointer text-primary_dark;
+          }
+        }
+      }
+    }
+  }
+}
