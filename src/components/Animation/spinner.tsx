@@ -1,5 +1,5 @@
 import React from 'react'
-import "./spinner.scss"
+import "../../styles/animation.scss"
 
 export default function Spinner(): JSX.Element {
     return (

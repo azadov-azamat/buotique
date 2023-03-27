@@ -1,5 +1,5 @@
 import React from 'react'
-import "./spinner.scss"
+import "../../styles/animation.scss"
 import {RefreshProps} from "./anim.props";
 
 export default function Refresh({loading}: RefreshProps): JSX.Element {
